@@ -1,0 +1,224 @@
+body {
+	overflow-x: hidden;
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+}
+
+ul.navbar-nav a.page-scroll {
+	color: white;
+}
+
+@media(max-width: 767px) {
+	ul.navbar-nav a.page-scroll {
+		color: black;
+		text-align: center;
+	}
+}
+
+.sectionHeading {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.portfolioImage {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+header {
+	width: 100vw;
+	/*height: 630px;*/
+	/*background-color: #f55444;*/
+	padding-top: 15vh;
+	overflow-x: hidden;
+}
+
+.header-content {
+	text-align: center;
+	/*height: 80vh;*/
+	width: 100vw;
+	/*min-height: 560px;*/
+	min-width: 1000px;
+	position: absolute;
+	/*background-color: green;*/
+}
+
+.header-content-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35vw;
+	/*height: 80vh;*/
+	/*background-color: blue;*/
+}
+
+.header-content-left h1 {
+	color: #f55444;
+	font-size: 8vw;
+	margin: 10% 15%;
+}
+
+.header-content-left h3 {
+	color: #888;
+}
+
+.header-content-inner {
+	/*min-height: 560px;*/
+	padding-top: 20vh;
+	position: relative;
+	right: -100px;
+	width: 900px; 
+	height: 600px;
+	background: url(../img/laptop.webp)no-repeat center center;
+	/*background-size: contain;*/
+	background-position: left;
+	margin-right: 0 !important;
+	/*background-color: yellow;*/
+}
+
+.headerText {
+	position: relative;
+	left: 4vw;
+}
+
+@media(max-width: 1400px) {
+	.header-content-left h1 {
+		font-size: 80px;
+	}
+}
+
+@media(max-width: 1200px) {
+	.header-content-inner {
+		width: 800px;
+	}
+	.header-content-left h1 {
+		font-size: 60px;
+	}
+	#homeHeading {
+		font-size: 48px;
+	}
+}
+
+@media(max-width: 996px) {
+	.header-content-left h1 {
+		font-size: 60px;
+	}
+	#homeHeading {
+		font-size: 36px;
+	}
+}
+
+@media(max-width: 768px) {
+
+	header {
+		/*height: 400px;*/
+		background: url(../img/header.jpg) no-repeat center center fixed;
+		background-size: cover;
+	}
+	.header-content {
+		padding: 10px !important;
+		/*height: 400px;*/
+	}
+
+	.header-content-left h3 {
+		color: #fff;
+	}
+
+	.header-content-inner {
+		width: 99vw;
+		height: 45vh;
+		right: 1vw;
+		background-size: contain;
+		background-position: center;
+		/*display: none;*/
+		background: none;
+		/*right: 200px;*/
+	}
+	.header-content-left {
+		/*display: none;*/
+		position: relative;
+		width: 100vw;
+	}
+
+	.header-content-left h1 {
+		margin: 0 !important;
+	}
+
+	#homeHeading {
+		margin-left: 18%;
+		/*width: 60vw;*/
+		width: 64%;
+		color: white;
+	}
+
+	#homeHeading span {
+		display: none;
+	}
+
+	.headerText {
+		width: 80vw;
+		left: 10vw;
+		top: -50px;
+	}
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media(min-width: 768px) {
+	.header-content-inner {
+		animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+	}
+}
+
+.fadeIn {
+	opacity: 0;
+}
+
+.fadeIn1 {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 2.25s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn2 {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn3 {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 3.75s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn4 {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 4.25s;
+    animation-fill-mode: forwards;
+}
+
+#about img {
+	position: relative;
+	width: 50%;
+	margin: 10% 0 0 25%;
+	border-radius: 50%;
+  /*transform: translateY(25%);*/
+}
+
+.aboutP {
+	color: black;
+}
